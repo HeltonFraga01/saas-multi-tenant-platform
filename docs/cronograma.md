@@ -4,6 +4,17 @@
 **Status geral**: 🟡 Em andamento - Fase 2
 **Progresso**: 30% (Fase 2 de 11)
 
+## 🎯 FILOSOFIA: BÁSICO PRIMEIRO
+
+**Estratégia Atual:** Fazer o básico funcionar perfeitamente antes de melhorias avançadas.
+
+### Prioridades de Desenvolvimento:
+1. ✅ **Estrutura base** - Páginas acessíveis, navegação
+2. 🔄 **Lógica fundamental** - Auth, CRUD, fluxos principais  
+3. ⏳ **Integração básica** - Supabase, pagamentos, chat
+4. ⏳ **Deploy funcionando** - Tudo rodando em produção
+5. 🚫 **Melhorias/testes** - Apenas após básico 100%
+
 ## 📊 Visão Geral
 
 - **Início**: 2024-01-15
@@ -32,153 +43,113 @@
 
 ---
 
-### 🔄 Fase 2: SDK da API (lib-api) - Parte 1 (6 dias)
-**Status**: 🟡 Em andamento (95% concluído)  
-**Período**: 20/01 - 27/01/2024
+### 🔄 Fase 2: Setup Básico do Banco (Supabase) (4 dias)
+**Status**: ⏳ Próxima  
+**Período**: 20/01 - 25/01/2024
 
-**Concluído**:
-- ✅ Estrutura base do pacote @saasmaster/lib-api
-- ✅ Cliente Supabase tipado (client.ts)
-- ✅ Tipos base (api.ts, database.ts)
-- ✅ Utilitários (env.ts, errors.ts, retry.ts, sentry.ts)
-- ✅ Serviço de autenticação completo
-- ✅ Store Zustand para autenticação
-- ✅ Serviços CRUD: companies, users, plans, payments
-- ✅ Serviços básicos: agents, chat
-- ✅ Documentação (README.md)
-- ✅ Resolução de problemas TypeScript
-- ✅ Configuração Sentry v8
-- ✅ Testes unitários passando (34/34)
-- ✅ Build funcionando corretamente
+**Foco**: Configurar Supabase e fazer CRUD básico funcionar
 
-**Pendente**:
-- 🔄 Testes unitários para todos os serviços
-- 🔄 Integração real com OpenPIX/Asaas (mock implementado)
-- 🔄 Integração real com Evo AI (mock implementado)
+**Objetivos**:
+- Configurar projeto Supabase
+- Schema básico (companies, users, plans)
+- Autenticação simples funcionando
+- Políticas RLS básicas
+- Testar conexão e operações CRUD
+- Integrar com o frontend básico
 
-**Próximos passos**:
-1. Implementar testes unitários
-2. Validar tipos TypeScript
-3. Testar integração com Supabase
-4. Preparar para Fase 3 (modelagem do banco)
+**Critério de Sucesso**: Login, cadastro e operações básicas funcionando
 
 ---
 
-### 🔄 Fase 3: Modelagem do Banco de Dados (4 dias)
+### 🔄 Fase 3: Frontend Básico (Páginas Principais) (4 dias)
 **Status**: ⏳ Próxima  
 **Período**: 28/01 - 31/01/2024
 
+**Foco**: Criar páginas essenciais funcionando
+
 **Objetivos**:
-- Criar schema PostgreSQL completo
-- Implementar Row Level Security (RLS)
-- Configurar políticas de acesso
-- Criar seeds de dados iniciais
-- Implementar migrações
-- Atualizar tipos TypeScript do database.ts
+- Homepage simples
+- Página de login/cadastro
+- Dashboard básico
+- Navegação funcionando
+- Conectar com Supabase
 
 ---
 
-### 🔄 Fase 4: Biblioteca de Componentes UI (5 dias)
+### 🔄 Fase 4: Integração de Pagamentos Básica (5 dias)
 **Status**: ⏳ Aguardando  
 **Período**: 03/02 - 09/02/2024
 
+**Foco**: Pagamento simples funcionando
+
 **Objetivos**:
-- Wrappers MagicUI
-- Componentes base do sistema
-- Tema e design tokens
-- Storybook para documentação
-- Testes de componentes
+- Integração OpenPIX básica
+- Webhook simples
+- Fluxo de assinatura básico
+- Confirmação de pagamento
 
 ---
 
-### 🔄 Fase 5: Landing Page (4 dias)
+### 🔄 Fase 5: Chat Básico (Evo AI) (4 dias)
 **Status**: ⏳ Aguardando  
 **Período**: 10/02 - 15/02/2024
 
+**Foco**: Chat funcionando no dashboard
+
 **Objetivos**:
-- Design responsivo moderno
-- Seções de apresentação
-- Formulários de contato
-- SEO otimizado
-- Performance otimizada
+- Integração Evo AI básica
+- Interface de chat simples
+- Envio/recebimento de mensagens
+- Histórico básico
 
 ---
 
-### 🔄 Fase 6: Sistema de Autenticação (5 dias)
+### 🔄 Fase 6: Deploy Básico (3 dias)
 **Status**: ⏳ Aguardando  
-**Período**: 16/02 - 22/02/2024
+**Período**: 16/02 - 18/02/2024
+
+**Foco**: Colocar tudo funcionando em produção
 
 **Objetivos**:
-- Páginas de login/registro
-- Recuperação de senha
-- Verificação de email
-- Guards de rota
-- Gerenciamento de sessão
+- Deploy no Cloud Panel
+- Configurar domínio
+- SSL e segurança básica
+- Testar fluxo completo
+- Backup básico
 
 ---
 
-### 🔄 Fase 7: Dashboard Super Admin (6 dias)
+### 🔄 Fase 7: Testes e Ajustes Finais (3 dias)
 **Status**: ⏳ Aguardando  
-**Período**: 23/02 - 02/03/2024
+**Período**: 19/02 - 21/02/2024
+
+**Foco**: Garantir que tudo funciona perfeitamente
 
 **Objetivos**:
-- Gestão de empresas
-- Gestão de usuários
-- Gestão de planos
-- Analytics e relatórios
-- Configurações globais
+- Testar todos os fluxos
+- Corrigir bugs críticos
+- Ajustar UX básica
+- Documentação essencial
+- Preparar para usuários
 
 ---
 
-### 🔄 Fase 8: Dashboard Company Admin (6 dias)
-**Status**: ⏳ Aguardando  
-**Período**: 03/03 - 10/03/2024
+## 🚀 APÓS O BÁSICO FUNCIONAR
 
-**Objetivos**:
-- Gestão de usuários da empresa
-- Configurações da empresa
-- Gestão de agentes IA
-- Relatórios da empresa
-- Billing e faturas
+### Melhorias Futuras (Apenas após básico 100%)
+- [ ] Sistema de autenticação avançado
+- [ ] Dashboard super admin completo
+- [ ] Gestão avançada de empresas
+- [ ] Testes automatizados avançados
+- [ ] Otimizações de performance
+- [ ] Funcionalidades extras
+- [ ] Sistema de afiliados
+- [ ] Analytics avançados
+- [ ] Integrações adicionais
+- [ ] Mobile app
+- [ ] API pública
 
----
-
-### 🔄 Fase 9: Integração de Pagamentos (7 dias)
-**Status**: ⏳ Aguardando  
-**Período**: 11/03 - 19/03/2024
-
-**Objetivos**:
-- Edge Functions para webhooks
-- Integração OpenPIX
-- Integração Asaas
-- Gestão de assinaturas
-- Processamento de pagamentos
-
----
-
-### 🔄 Fase 10: Integração Evo AI (6 dias)
-**Status**: ⏳ Aguardando  
-**Período**: 20/03 - 27/03/2024
-
-**Objetivos**:
-- Chat em tempo real
-- Gestão de agentes
-- Webhooks de mensagens
-- Interface de chat
-- Notificações
-
----
-
-### 🔄 Fase 11: Deploy e Monitoramento (8 dias)
-**Status**: ⏳ Aguardando  
-**Período**: 28/03 - 08/04/2024
-
-**Objetivos**:
-- Deploy em produção
-- Monitoramento e logs
-- Backup e recuperação
-- Documentação final
-- Treinamento da equipe
+**Regra**: Só partir para melhorias quando o básico estiver 100% funcionando e testado por usuários reais.
 
 ---
 
