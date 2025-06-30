@@ -1,0 +1,46 @@
+{
+  "name": "saas-multi-tenant",
+  "version": "1.0.0",
+  "description": "SaaS Multi-Tenant com Supabase, React 18, Tailwind 3 e MagicUI",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0",
+    "turbo": "^1.11.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/saas-multi-tenant.git"
+  },
+  "keywords": [
+    "saas",
+    "multi-tenant",
+    "react",
+    "supabase",
+    "tailwind",
+    "magicui",
+    "typescript"
+  ],
+  "author": "SaaSMaster Dev",
+  "license": "MIT"
+}
